@@ -1,3 +1,4 @@
+//Challenge 1
 whatCanIDrink = function(age){
     if(age <0){
         return "Sorry. I can’t tell what drink because that age is incorrect!";
@@ -16,5 +17,21 @@ whatCanIDrink = function(age){
     }
     else {
         return "Sorry. I can’t tell what drink because that age is incorrect!";
+    }
+}
+//Challenge Two
+fizzBuzz = function(number){
+    if(number % 3 === 0 && number % 5 === 0 ){
+        return "FizzBuzz";
+    }
+
+    else if (number % 3 === 0){
+        return "Fizz";
+    }
+    else if (number % 5 === 0){
+        return "Buzz";
+    }
+    else{
+        return number;
     }
 }

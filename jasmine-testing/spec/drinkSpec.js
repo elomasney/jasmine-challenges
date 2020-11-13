@@ -1,3 +1,4 @@
+//Challenge 1
 describe ("whatCanIDrink function", function(){
 
     beforeEach(function(){
@@ -34,4 +35,36 @@ it ("should not be able to return a drink if age is greater than 130", function(
     expect(result).toBe("Sorry. I can’t tell what drink because that age is incorrect!");
 });
 });
+});
+
+//Challenge Two
+describe("fizzbuzz function", function(){
+    beforeEach(function(){
+        fizzbuzz = new fizzBuzz;
+    });
+
+    describe("Returns number, fizz, buzz or fizzbuzz", function(){
+        it ("should exist", function(){
+        expect(fizzBuzz).toBeDefined();
+ });
+
+    it ("should return fizz if number is divisble by 3 when fizzBuzz function is called", function(){
+        var result = fizzBuzz(6);
+        expect(result).toBe("Fizz");
+    });
+
+    it ("should return buzz if number is divisible by 5 when fizzBuzz function is called", function(){
+        var result = fizzBuzz(10);
+        expect(result).toBe("Buzz");
+    });
+
+    it ("Should return FizzBuzz is number is divisible by 3 and 5 when fizzBuzz function is called", function(){
+        var result = fizzBuzz(15);
+        expect(result).toBe("FizzBuzz");
+    });
+    it ("should return the number if it not divisble by either 3 or 5", function(){
+        var result = fizzBuzz(1);
+        expect(result).toBe(1);
+    });
+    });
 });
